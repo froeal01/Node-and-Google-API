@@ -1,20 +1,15 @@
 requirejs.config({
+  baseUrl: 'js',
 
-	baseUrl: 'js',
+  paths: {
+  },
 
-	paths:{
-
-	},
-
-	shim:{
-
-	}
-
+  shim: {
+  }
 });
 
-require(['app']),
+require(['app'],
 
 function(App) {
-	window.bTask = new App();
-
+  window.bTask = new App();
 });
