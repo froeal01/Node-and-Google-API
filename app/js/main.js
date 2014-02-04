@@ -11,5 +11,5 @@ requirejs.config({
 require(['app'],
 
 function(App) {
-  window.bTask = new App();
+  window.taskList = new App();
 });

@@ -1,6 +1,6 @@
 suite('App', function(){
 	test('Object should be present', function(){
-		assert.ok(window.bTask);
+		assert.ok(window.taskList);
 	});
 
 });
