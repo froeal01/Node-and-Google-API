@@ -5,3 +5,7 @@ define([], function(){
   config.clientId = '491488844457-q539oarktu2h72tam7gnovdp49tq838m.apps.googleusercontent.com';
   return config;
 });
+
+_.templateSettings = {
+	interpolate: /\{\{(.+?)\}\}/g
+};
