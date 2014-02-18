@@ -31,6 +31,7 @@ define(['config'], function(config) {
         }
         app.views.auth.$el.hide();
         $('#signed-in-container').show();
+        self.trigger('ready');
       } else{
         if (authResult && authResult.error){
           console.error('Unable to sign in:', authResult.error);
@@ -81,6 +82,8 @@ define(['config'], function(config) {
       break;
 
       case 'read':
+        var request = gapi.client.tasks[model.url].list(options.data);
+        Backbone.gapiRequest(request,method,model,options);
       break;
     }
   };

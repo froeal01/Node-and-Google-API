@@ -16,7 +16,12 @@ define(['gapi', 'views/app', 'views/auth'],
  		views: {},
  		connectGapi: function(){
  			this.apiManager = new ApiManager(this);
+ 		
+
+
  		}
+
+
 
  };
 
