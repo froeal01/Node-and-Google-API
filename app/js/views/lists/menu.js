@@ -2,7 +2,7 @@ define(['views/lists/menuitem'], function(ListMenuItemView){
 	var ListMenuView = Backbone.View.extend({
 		el : '.left-nav',
 		tagName: 'ul',
-		className 'nav nav-list lists-nav',
+		className: 'nav nav-list lists-nav',
 
 		events:{
 
