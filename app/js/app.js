@@ -2,7 +2,7 @@ define(['gapi', 'views/app', 'views/auth', 'views/lists/menu', 'collections/task
 
 
 	function(ApiManager, AppView, AuthView, ListMenuView, TaskLists){
-		var App = function (){
+		var App = function(){
 			this.views.app = new AppView();
 			this.views.app.render();
 
@@ -15,6 +15,7 @@ define(['gapi', 'views/app', 'views/auth', 'views/lists/menu', 'collections/task
 
  App.prototype = {
  		views: {},
+ 		collections:{},
  		connectGapi: function(){
  			var self = this;
  			this.apiManager = new ApiManager(this);
